@@ -1,13 +1,17 @@
 import Hero from 'components/hero'
 import Container from 'components/container'
 import PostBody from 'components/post-body'
+import Contact from 'components/contact'
+import { TwoColumn,TwoColumnMain,TwoColumnSidebar } from 'components/two-column'
 
 export default function About(){
     return (
         <Container>
         <Hero title="About" subtitle="About development activities" />
-        <PostBody>
-        <p>
+        <TwoColumn>
+          <TwoColumnMain>
+            <PostBody>
+              <p>
               Cubeが得意とする分野はモノづくりです。3次元から2次元の造形、プログラミングやデザインなど、さまざまな技術を組み合わせることによって社会や環境と結びつけるクリエイティブを提案し続けています。
             </p>
             <h2>モノづくりで目指していること</h2>
@@ -22,6 +26,11 @@ export default function About(){
               今までと違うものを作ることで愛着が湧いてきます。そこで興味を持ったことは小さなことでもいいから取り入れて、良いものを作れるようにしています。小さなヒントから新しいものを生み出すようなモノづくりは、これからも続けていきたいです。
             </p>
             </PostBody>
+          </TwoColumnMain>
+          <TwoColumnSidebar>
+            <Contact />
+          </TwoColumnSidebar>
+          </TwoColumn>
         </Container>
     )
 }
