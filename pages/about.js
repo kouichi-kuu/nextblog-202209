@@ -8,6 +8,14 @@ export default function About(){
     return (
         <Container>
         <Hero title="About" subtitle="About development activities" />
+        <figure>
+          <Image
+          src={eyecatch}
+          alt=""
+          layout="responsive"
+          sizes="(min-width:1152px) 1152px, 100vw"
+          />
+        </figure>
         <TwoColumn>
           <TwoColumnMain>
             <PostBody>
